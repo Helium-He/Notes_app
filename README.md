@@ -9,5 +9,4 @@
 ![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/screens.png "Logo Title Text 1")
 
 
-## Enjoy and learn 
-# :smile:
+## Enjoy and learn :smile:
