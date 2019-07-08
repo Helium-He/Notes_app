@@ -18,14 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-//import com.firebase.ui.database.FirebaseRecyclerAdapter;
-
-//import com.firebase.ui.database.FirebaseRecyclerOptions;
-//import com.firebase.ui.database.SnapshotParser;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.firebase.ui.database.SnapshotParser;
@@ -34,13 +28,8 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-//import com.google.firebase.database.snapshot.StringNode;
 import com.google.firebase.database.Query;
 import com.harpreet.notes_app.Modal.Data;
-import com.harpreet.notes_app.Modal.Data;
-
-import org.w3c.dom.Text;
-
 import java.text.DateFormat;
 import java.util.Date;
 
