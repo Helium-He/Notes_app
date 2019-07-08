@@ -8,5 +8,8 @@
 ## ScreenShots
 ![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/screens.png "Logo Title Text 1")
 
+### Login for guests
+Email: guests@gmail.com
+Password: iamguest
 
 ## Enjoy and learn :smile:
