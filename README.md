@@ -1,7 +1,7 @@
 # ![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/github_icon_header.png "Logo Title Text 1") Notes_app
 ## Simple Notes taking android app using Firebase
 
-# [Click to download](https://github.com/Helium-He/Notes_app/blob/master/raws/unsigned_app.apk)
+# [Click to download](https://github.com/Helium-He/Notes_app/raw/master/raws/unsigned_app.apk)
 
 ### Features
 * Firebase
