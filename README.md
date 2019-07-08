@@ -6,7 +6,7 @@
 * beautiful gui
 * Good for beginners
 ## ScreenShots
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/screens.png "Logo Title Text 1")
 
 
 ## Enjoy and learn 
