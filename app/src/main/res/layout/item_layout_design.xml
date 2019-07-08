@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@android:color/holo_orange_light"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_design"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="16 March, 2019"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFF" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:text="HEllo My Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:maxLines="1"
+            android:textColor="#2551D6"
+            android:id="@+id/name_item"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="HEllo My des"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:maxLines="2"
+                android:textColor="#2551D6"
+                android:id="@+id/des_item"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>
