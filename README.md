@@ -6,12 +6,12 @@
 ### Features
 * Firebase
 * simple
-* beautiful gui
+* beautiful GUI
 * Good for beginners
 ## ScreenShots
 ![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/screens.png "Logo Title Text 1")
 
-### Login for guests
+### Login for giuests
 Email: guests@gmail.com
 Password: iamguest
 
