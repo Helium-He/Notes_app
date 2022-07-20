@@ -1,8 +1,8 @@
 # ![alt text](https://github.com/Helium-He/Notes_app/blob/master/raws/github_icon_header.png "Logo Title Text 1") Notes_app
-## A simple note taking application for Android which also incorporates Firebase.
+### A simple note taking application for Android which also incorporates Firebase.
 
-# Download Link
-## [Click to download](https://github.com/Helium-He/Notes_app/raw/master/raws/Notes_app.apk)
+## Download Link
+### [Click to download](https://github.com/Helium-He/Notes_app/raw/master/raws/Notes_app.apk)
 
 ## Features
 * Based on Firebase
