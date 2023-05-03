@@ -98,27 +98,42 @@ public class HomeActivity extends AppCompatActivity {
         Button btnCancle = myview.findViewById(R.id.cancle);
         Button btnsave = myview.findViewById(R.id.save);
 
+
+        //onClickListener on the "Save" button for the when the user is done with entering the input fields
         btnsave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //sets the text that was entered into the input fields to mname, mdes respectively
                 String mname = name.getText().toString().trim();
                 String mdes = des.getText().toString().trim();
+
+                //validates the required field for "mname" to make sure that they are not empty
                 if (TextUtils.isEmpty(mname))
                 {
                     name.setError("Required Field");
                     return;
                 }
+
+                //validates the required field for "mdes" to make sure that they are not empty
                 if (TextUtils.isEmpty(mdes))
                 {
                     des.setError("Required Field");
                     return;
                 }
+
+                //Generates a unique ID and Date for the data. Gets the Data for when the note was made.
+                //stores those into id, mDate respectively
                 String id = mDatabase.push().getKey();
                 String mDate = DateFormat.getDateInstance().format(new Date());
 
+                //Creates a data objects (note) with the fields that were filled out above (mname, mdes, id, mDate)
                 Data data = new Data(mname,mdes,id,mDate);
+
+                //Stores that data^ into the Firebase Realtime Database
                 mDatabase.child(id).setValue(data);
 
+                //Closes the dialog box
                 myalert_dialogue.dismiss();
             }
         });
