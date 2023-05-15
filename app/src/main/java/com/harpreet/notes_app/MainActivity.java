@@ -26,13 +26,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Initialize views
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
         btnsignin = findViewById(R.id.signin);
         btnsignup = findViewById(R.id.signup);
+        // Initialize FirebaseAuth instance
         mAuth = FirebaseAuth.getInstance();
+        // Initialize ProgressDialog
         progressd = new ProgressDialog(MainActivity.this);
 
+        // Check if the user is already signed in, if yes, redirect to HomeActivity
         if (mAuth.getCurrentUser()!=null)
         {
             startActivity(new Intent(getApplicationContext(),HomeActivity.class));
@@ -58,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
                         progressd.setMessage("Processing");
                         progressd.show();
+                        // Sign in with email and password using FirebaseAuth
                         mAuth.signInWithEmailAndPassword(mEmail,mPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -76,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
-
+        // Set click listener for sign-up button
         btnsignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
