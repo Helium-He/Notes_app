@@ -45,6 +45,7 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         });
 */
+        // Set click listener for sign-up button
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +62,8 @@ public class RegistrationActivity extends AppCompatActivity {
                     pass.setError("RequiredField..");
                     return;
                 }
+                // Show progress dialog while processing sign-up request
+
                 pddia.setMessage("Processing");
                 pddia.show();
                 mAuth.createUserWithEmailAndPassword(mEmail,mPass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {

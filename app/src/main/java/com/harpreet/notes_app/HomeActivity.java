@@ -39,7 +39,10 @@ public class HomeActivity extends AppCompatActivity {
     private FloatingActionButton fab;
     private RecyclerView recyclerView;
 
-    private FirebaseRecyclerAdapter<Data,Myviewholder> adapter;
+    private FirebaseRecyclerAdapter<Data,Myviewholder> adapter;    //These lines declare various variables used within the HomeActivity class, including references to UI
+                                                                    // elements (toolbar, floating action button, and recycler view), an adapter for
+                                                                    // the recycler view, instances of Firebase-related classes (FirebaseAuth and DatabaseReference),
+                                                                    // and other variables to store data.
     private FirebaseAuth mauth;
     private DatabaseReference mDatabase;
 
@@ -80,7 +83,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     }
-    private void addData()
+    private void addData()             //This method is responsible for displaying an AlertDialog that allows the user to input data (name and description) for a new note.
     {
         AlertDialog.Builder mydialog = new AlertDialog.Builder(this);
         LayoutInflater inflater = LayoutInflater.from(this);
@@ -134,7 +137,7 @@ public class HomeActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStart() {
+    protected void onStart() {  //It sets up the FirebaseRecyclerAdapter for displaying the notes in the RecyclerView and starts listening for changes in the data.
         super.onStart();
 
         Query query = FirebaseDatabase.getInstance().getReference().child("All data").child(mauth.getUid());
@@ -181,13 +184,15 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
+    protected void onStop() {  //This method is called when the activity is stopped. It stops the FirebaseRecyclerAdapter from listening to changes in the data.
         super.onStop();
         adapter.stopListening();
 
     }
 
-    public static  class Myviewholder extends RecyclerView.ViewHolder{
+    public static  class Myviewholder extends RecyclerView.ViewHolder{          //This is a static inner class that defines a
+                                                                // custom RecyclerView.ViewHolder for the notes. It holds references
+                                                                 //   to the UI elements within each item of the RecyclerView.
 
         View mView;
 
@@ -213,7 +218,9 @@ public class HomeActivity extends AppCompatActivity {
 
     }
 
-    public void updateData()
+    public void updateData() //
+   // The updateData() method is responsible for displaying an AlertDialog that allows the user to update the
+    // selected note's data or delete the note. Here's a breakdown of what the method does:
 
     {
 
